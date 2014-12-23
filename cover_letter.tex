@@ -1,0 +1,50 @@
+\documentclass[11pt]{letter}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{fullpage}
+
+\renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
+  \stopbreaks
+  \noindent
+  \ifx\@empty\fromaddress\else
+  \hspace*{\longindentation}\fi
+  \parbox{\indentedwidth}{\raggedright
+       \ignorespaces #1\\[2\medskipamount]%
+       \ifx\@empty\fromsig
+           \fromname
+       \else \fromsig \fi\strut}%
+   \par}
+
+\longindentation=0pt
+
+\signature{Klaus Okkelberg}
+\address{Klaus Okkelberg \\ 2154 42nd St, Apt 107 \\ Kenner, LA 70065 \\ (484) 226 8020 \\ klaus.okkelberg@gmail.com}
+
+\begin{document}
+
+\begin{letter}{}
+\opening{Dear Hiring Manager:}
+
+I would like to apply for an internship for Summer 2015 in electrical engineering.
+% begin customize
+%
+% end customize
+I am currently a PhD student in Electrical Engineering at Georgia Tech. I have a B.S.\ from Penn State and a M.S.\ from the University of New Orleans, both in Electrical Engineering. I offer a strong academic background and have a lot of experience in many areas. Highlights include:
+
+\begin{itemize}
+    \item \textbf{Academic Excellence:} B.S.\ GPA: 3.8, M.S.\ GPA: 4.0. Wrote theses for both degrees
+    \item \textbf{Numerous Research Areas:} Signal integrity at Xilinx, Battery management at Georgia Tech and the University of New Orleans, and Nuclear magnetic specstroscopy at Penn State. Also completed projects in quantum mechanics, vehicle stabilization, image/video correction, and mathematics
+    \item \textbf{Teamwork:} Lead Senior Design Project and several other school projects. Contributed to two research groups. Worked with Power/Signal Integrity engineers at Xilinx
+    \item \textbf{Programming Skills:} 10 years of experience with Matlab and Simulink, speeding up code by a factor of 100 at Penn State and by a factor of 15 at Xilinx, while adding functionality. Can also program in C, Java, Python, Fortran, and Visual Basic
+    \item \textbf{Other skills:} Experienced with lab equipment, such as oscilloscopes and network analyzers. Good at mathematical modeling of physical systems
+\end{itemize}
+
+I am eager to leverage my abilities to make a significant contribution to your company. My hours are flexible, and I will be available for up to 14 weeks beginning in May.
+
+I look forward to learning about the next steps in the selection process. Thank you for your time and consideration.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}
